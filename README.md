@@ -37,3 +37,5 @@ Follow these steps to set up and run the project locally:
 3. **Run the Java Project**
 
 4. Once the application is running, access mongodb in your web browser at http://localhost:8081.
+
+Code referenced from https://github.com/ali-bouali/one-to-one-chat-spring-boot-web-socket/tree/main
