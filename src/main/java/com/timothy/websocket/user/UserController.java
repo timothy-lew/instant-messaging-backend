@@ -45,9 +45,14 @@ public class UserController {
         return user;
     }
 
-    @GetMapping("/users")
+    @GetMapping("/users/online")
     public ResponseEntity<List<User>> findConnectedUsers() {
         return ResponseEntity.ok(userService.findConnectedUsers());
+    }
+
+    @GetMapping("/users")
+    public ResponseEntity<List<User>> findUsers() {
+        return ResponseEntity.ok(userService.findUsers());
     }
 
     @GetMapping("/user/{nickname}")

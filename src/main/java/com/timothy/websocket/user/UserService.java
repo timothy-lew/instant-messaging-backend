@@ -29,6 +29,10 @@ public class UserService {
         return repository.findAllByStatus(Status.ONLINE);
     }
 
+    public List<User> findUsers() {
+        return repository.findAll();
+    }
+
     public User findUserByNickname(String nickname) {
         return repository.findById(nickname).orElse(null);
     }
